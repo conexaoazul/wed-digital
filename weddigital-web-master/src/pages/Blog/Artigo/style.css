@@ -1,0 +1,163 @@
+section.article {
+  padding: 4rem 0;
+}
+
+section.article p {
+  margin-bottom: 0;
+  font-size: 1.14rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: var(--color-dark);
+}
+
+section.article div.header_ h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--color-gray);
+  margin-bottom: 1rem;
+}
+
+section.article div.header_ h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  display: flex;
+}
+
+section.article div.header_ p {
+  font-size: 1.14rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-dark);
+  margin-top: 1rem;
+}
+
+div.author-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.56rem;
+  border-bottom: 1px solid #00000025;
+}
+
+div.author-share div.author {
+  font-size: 1.28rem;
+  font-weight: 600;
+}
+
+div.author-share div.info {
+  display: flex;
+  align-items: center;
+}
+
+div.author-share div.info div.date {
+  color: var(--color-gray);
+  margin-left: 1.56rem;
+}
+
+div.author-share div.info div.likes {
+  display: flex;
+  align-items: center;
+  margin-left: 1.56rem;
+}
+
+div.author-share div.info div.likes ion-icon {
+  font-size: 1.56rem;
+  margin-right: 0.28rem;
+}
+
+div.author-share div.share {
+  display: flex;
+  align-items: center;
+}
+
+div.author-share div.share button {
+  font-size: 2.56rem;
+  background: transparent;
+  border: 0;
+  color: var(--color-gray);
+  margin-left: 1.56rem;
+  transition: 0.2s;
+}
+
+div.author-share div.share button:hover {
+  color: var(--color-secondary);
+}
+
+div.share-options {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  z-index: 88;
+  box-shadow: 0 0 4rem -1rem #0000004f;
+}
+
+div.share-options button.close_ {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: 1.71rem;
+  right: 2rem;
+  font-size: 1.56rem;
+}
+
+div.share-options ul {
+  min-width: 20rem;
+}
+
+div.share-options ul li {
+  margin-bottom: 1rem;
+}
+
+div.share-options ul li:last-child {
+  margin-bottom: 0;
+}
+
+div.share-options ul li a {
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.56rem;
+  border: 1px solid #00000025;
+  border-radius: 0.56rem;
+  transition: 0.2s;
+}
+
+div.share-options h4 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+div.share-options ul li a:hover {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+section.article h4 {
+  font-weight: 600;
+}
+
+section.article h5 {
+  font-weight: 600;
+}
+
+section.article ul.list li {
+  font-size: 1.28rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+#video_ytb {
+  width: 450px;
+  height: 300px;
+
+  @media (width <= 991px) {
+    width: 350px;
+    height: 190px;
+  }
+}

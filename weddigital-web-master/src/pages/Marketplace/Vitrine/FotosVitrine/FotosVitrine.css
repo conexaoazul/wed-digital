@@ -1,0 +1,29 @@
+.imagem {
+  max-width: 100%; /* largura máxima da div */
+  border-radius: 1rem;
+}
+
+.imagem .slide img {
+  max-width: 100%; /* garante que a imagem nunca será maior do que a largura da div */
+  max-height: 100%; /* garante que a imagem nunca será maior do que a altura da div */
+  display: block; /* garante que a imagem seja exibida como um bloco para evitar espaços em branco */
+  border-radius: 0.56rem;
+}
+
+.carousel .thumbs-wrapper {
+  margin: 1rem 0 -0.56rem !important;
+}
+
+.carousel .thumb,
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border: 0 !important;
+  border-radius: 1rem;
+  filter: brightness(1) opacity(0.8);
+  transition: 0.2s;
+}
+
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  filter: brightness(1.5) opacity(1);
+}

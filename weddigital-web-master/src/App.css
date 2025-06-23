@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-condensed");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proximanova_regular.ttf") format("truetype");
+}
+
+:root {
+  --header-height: 3rem;
+  --side-width-close: 5rem;
+  --side-width-open: 14rem;
+
+  /* ===== Colors ===== */
+  --color-preto: #1b1a19;
+  --color-dark: #1b1a19;
+  --color-text: #fff;
+  --color-branco: #fff;
+  --color-cinza: #d8d8d8;
+  --color-cinza-forte: #888;
+  --color-bg: #323130;
+  --color-contrast: #f7894a;
+  --color-roxo: #400072;
+  --color-roxo-bg: #ebdefd;
+  --color-dourado: #ffbc44;
+  --color-quase-preto: #12002a;
+  --color-vermelho: #d41a1a;
+
+  /* ===== Font and typography ===== */
+  --normal-font-size: 1rem;
+
+  /* ===== z index ===== */
+  --z-fixed: 100;
+  --body-font: "Proxima Nova", sans-serif;
+  --title-font: "Proxima Nova", sans-serif;
+  --font-logo-WedDigital: "Poppins", sans-serif;
+}
+
+/* ===== Estilo Geral ===== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+
+  /* text-shadow: rgba(0, 0, 0, 0.125) 0.1em 0.1em 0.1em */
+}
+
+.text-roxo {
+  color: var(--color-roxo);
+}
+
+.text-branco {
+  color: var(--color-branco);
+}
+
+.text-preto {
+  color: var(--color-dourado);
+}
+
+/* Move content based sidebar toggle */
+#close-sidebar {
+  margin-left: -9rem;
+}
+
+/* ==== Estilo da Main ==== */
+.main {
+  margin-left: calc(var(--side-width-close) + 5rem);
+  padding-top: calc(var(--header-height) + 1.5rem);
+  transition: 0.5s;
+}
+
+.space_homepage_separator {
+  padding: 0.1rem 0;
+  margin: 2rem 0;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.image-icon-avatar-profile {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  background-color: black;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+.button-voltar-geral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-voltar-geral a {
+  padding: 1rem 2rem;
+  background-color: var(--color-roxo);
+  border-radius: 12px;
+}
+
+@media only screen and (width >= 768px) {
+  .main {
+    padding-left: calc(var(--side-width-open) + 5rem);
+  }
+
+  .mobile-hidden {
+    display: block;
+  }
+}
+
+/* Setas Slick */
+.slick-next::before,
+.slick-prev::before {
+  color: var(--color-roxo) !important;
+}
+
+@media only screen and (width <= 600px) {
+  #home_mobile .title {
+    font-size: 1.7rem !important;
+  }
+
+  #home_mobile .title span {
+    font-size: 1.7rem !important;
+  }
+}
+
+@media only screen and (width <= 375px) {
+  #home_mobile .title {
+    font-size: 1.5rem !important;
+  }
+
+  #home_mobile .title span {
+    font-size: 1.7rem !important;
+  }
+}

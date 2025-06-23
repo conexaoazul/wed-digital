@@ -1,0 +1,13 @@
+@media (width >= 1025px) {
+  /* tablets em modo paisagem, laptops e desktops grandes */
+  #home_mobile .title {
+    font-size: 2rem;
+  }
+}
+
+@media (width >= 1281px) {
+  /* laptops e desktops de alta resolução */
+  #home_mobile .title {
+    font-size: 2rem;
+  }
+}

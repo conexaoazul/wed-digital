@@ -1,0 +1,111 @@
+@media only screen and (width <= 600px) {
+  #home_mobile .title {
+    font-size: 1.9rem !important;
+  }
+}
+
+/* ----------- iPhone 4 e 4S ----------- */
+
+/* Retrato e Paisagem */
+@media only screen and (width >= 320px) and (device-width <= 480px) and (min-device-pixel-ratio: 2) {
+}
+
+/* Retrato */
+@media only screen and (width >= 320px) and (device-width <= 480px) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* Paisagem */
+@media only screen and (width >= 320px) and (device-width <= 480px) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 5, 5S, 5C e 5SE ----------- */
+
+/* Retrato e Paisagem */
+@media only screen and (width >= 320px) and (device-width <= 568px) and (min-device-pixel-ratio: 2) {
+}
+
+/* Retrato */
+@media only screen and (width >= 320px) and (device-width <= 568px) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* Paisagem */
+@media only screen and (width >= 320px) and (device-width <= 568px) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 6, 6S, 7 e 8 ----------- */
+
+/* Retrato e Paisagem */
+@media only screen and (width >= 375px) and (device-width <= 667px) and (min-device-pixel-ratio: 2) {
+  #home_mobile .title {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* Retrato */
+@media only screen and (width >= 375px) and (device-width <= 667px) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* Paisagem */
+@media only screen and (width >= 375px) and (device-width <= 667px) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 6+, 7+ e 8+ ----------- */
+
+/* Retrato e Paisagem */
+@media only screen and (width >= 414px) and (device-width <= 736px) and (min-device-pixel-ratio: 3) {
+}
+
+/* Retrato */
+@media only screen and (width >= 414px) and (device-width <= 736px) and (min-device-pixel-ratio: 3) and (orientation: portrait) {
+}
+
+/* Paisagem */
+@media only screen and (width >= 414px) and (device-width <= 736px) and (min-device-pixel-ratio: 3) and (orientation: landscape) {
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Retrato e Paisagem */
+@media only screen and (width >= 375px) and (device-width <= 812px) and (min-device-pixel-ratio: 3) {
+}
+
+/* Retrato */
+@media only screen and (width >= 375px) and (device-width <= 812px) and (min-device-pixel-ratio: 3) and (orientation: portrait) {
+}
+
+/* Paisagem */
+@media only screen and (width >= 375px) and (device-width <= 812px) and (min-device-pixel-ratio: 3) and (orientation: landscape) {
+}
+
+/* ----------- iPhone XR ----------- */
+
+/* Retrato */
+@media only screen and (device-width <= 414px) and (device-height <= 896px) and (device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* Paisagem */
+@media only screen and (device-width <= 414px) and (device-height <= 896px) and (device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone XS ----------- */
+
+/* Retrato */
+@media only screen and (device-width <= 414px) and (device-height <= 896px) and (device-pixel-ratio: 3) and (orientation: portrait) {
+}
+
+/* Paisagem */
+@media only screen and (device-width <= 414px) and (device-height <= 896px) and (device-pixel-ratio: 3) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 12 Pro, 13 ----------- */
+
+/* Retrato */
+@media only screen and (device-width <= 390px) and (device-height <= 844px) and (device-pixel-ratio: 3) and (orientation: portrait) {
+  #home_mobile .title {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* Paisagem */
+@media only screen and (device-width <= 414px) and (device-height <= 896px) and (device-pixel-ratio: 3) and (orientation: landscape) {
+}

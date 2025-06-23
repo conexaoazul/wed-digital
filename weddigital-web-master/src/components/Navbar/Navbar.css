@@ -1,0 +1,197 @@
+/* header */
+.container-fluid {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+button.acesso-fixed,
+button.acesso-fixed:hover {
+  position: fixed;
+  box-shadow: 0 0 8rem -1rem #01151e;
+  bottom: 1.71rem;
+  right: 1.71rem;
+  padding: 0 1rem;
+  z-index: 8888;
+  border-radius: 8rem;
+  font-size: 1.28rem;
+  font-weight: 500;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  color: #fff !important;
+}
+
+a.whatsapp,
+a.whatsapp:hover {
+  position: fixed;
+  padding: 0;
+  width: 4.71rem;
+  height: 4.71rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 1.71rem;
+  right: 2.6rem;
+  z-index: 8888;
+  box-shadow: 0 0 8rem -1rem #01151e;
+  border-radius: 8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  background: #04d960 !important;
+  border: 1px solid #04d960 !important;
+  color: #fff !important;
+}
+
+a.whatsapp span {
+  display: flex;
+  margin-bottom: -0.14rem;
+}
+
+a.whatsapp i {
+  font-size: 2.42rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #51116ecc;
+  backdrop-filter: blur(1rem);
+  width: 100%;
+  z-index: 8888;
+}
+
+header div.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+header div.content nav {
+  width: 100%;
+}
+
+header div.content a.logo {
+  display: flex;
+  align-items: center;
+}
+
+header div.content a.logo div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.56rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: var(--font-logo-WedDigital);
+}
+
+header div.content a.logo img {
+  height: 4rem;
+}
+
+header div.content nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header div.content nav ul li {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+header div.content nav ul li a {
+  padding: 0.56rem 1.71rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.14rem;
+}
+
+header div.content nav ul li a.btn {
+  padding: 0.71rem 2.28rem 0.56rem;
+}
+
+/* response */
+
+@media (width <= 991px) {
+  header div.content nav {
+    position: fixed;
+    left: -360px;
+    top: 0;
+    width: 100%;
+    max-width: 300px;
+    min-height: 100vh;
+    background: #fff;
+    box-shadow: 0.8rem 0 2.4rem rgb(9 13 73 / 32%);
+    transition: 0.2s;
+  }
+
+  header.open div.content nav {
+    left: 0;
+  }
+
+  header div.content nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2.28rem;
+  }
+
+  header div.content nav ul li a,
+  header div.content nav ul li a.btn,
+  header div.content nav ul li a.text-primary {
+    color: var(--color-dark) !important;
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 1rem 2.28rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+
+  header div.content nav ul li a.btn.btn-primary {
+    color: var(--color-primary) !important;
+    font-weight: 500;
+  }
+
+  button.menu {
+    display: flex;
+  }
+
+  div.container {
+    padding: 0 1rem;
+  }
+
+  header div.content nav ul li > ul {
+    position: unset;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    margin-left: 1.71rem;
+    padding: 0.71rem 0;
+    background: var(--color-light);
+    border-radius: 0.71rem;
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+  }
+
+  header div.content nav ul li > ul li a {
+    padding: 0.71rem calc(0.71rem * 2);
+  }
+
+  header div.content nav ul li {
+    flex-direction: column;
+  }
+
+  header div.content {
+    padding: 1rem 0.71rem !important;
+  }
+
+  header div.content a.logo img {
+    margin-left: -1.28rem;
+  }
+}

@@ -1,0 +1,49 @@
+.searchBox {
+  color: var(--color-roxo);
+  display: flex;
+  align-items: center;
+  background: var(--color-cinza);
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.search {
+  color: var(--color-roxo);
+  flex: 1;
+  background: var(--color-cinza);
+  border: none;
+}
+
+.search:focus {
+  border: none;
+  outline: none;
+}
+
+.icon {
+  flex-shrink: 0;
+  font-size: 18px;
+}
+
+.modalButtonOk {
+  color: var(--color-branco);
+  background: var(--color-roxo);
+  font-weight: bold;
+}
+
+.modal .modalButtonOk:hover {
+  background: var(--color-dourado);
+  color: var(--color-roxo);
+}
+
+.modalButtonCancel {
+  background: var(--color-dourado);
+  color: var(--color-roxo);
+  font-weight: bold;
+}
+
+.modal .modalButtonCancel:hover {
+  color: var(--color-branco);
+  background: var(--color-roxo);
+  border: none;
+}

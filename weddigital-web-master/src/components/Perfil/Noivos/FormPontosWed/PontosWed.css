@@ -1,0 +1,29 @@
+.pontos_wed_cupom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pontos_wed_cupom a {
+  margin-top: 2rem;
+  text-decoration: none;
+  background-color: var(--color-roxo);
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  color: var(--color-dourado);
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.pontos_wed_cupom a:hover {
+  background-color: var(--color-dourado);
+  color: var(--color-roxo);
+}
+
+@media screen and (width <= 700px) {
+  .pontos-noivas {
+    margin-top: -13rem !important;
+  }
+}

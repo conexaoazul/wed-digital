@@ -1,0 +1,76 @@
+.card__segmento {
+  display: flex;
+  flex-direction: col;
+  align-items: center;
+  justify-content: center;
+  background-color: #efeaea;
+  border-radius: 10px;
+  height: 2.5rem;
+  margin: 1rem 0.5rem;
+  box-shadow:
+    rgb(50 50 93 / 25%) 0 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0 1px 3px -1px;
+  width: 20rem;
+  border: none;
+  position: relative;
+}
+
+.segmento__titulo {
+  font-size: 14px;
+}
+
+.input-radio {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.card__segmento:hover {
+  cursor: pointer;
+}
+
+.input-radio:checked ~ .check {
+  border: solid 2px #380065;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media screen and (width <= 1200px) {
+}
+
+@media screen and (width <= 950px) {
+}
+
+@media screen and (width <= 780px) {
+}
+
+@media screen and (width <= 620px) {
+}
+
+@media screen and (width <= 450px) {
+  .segmento__titulo {
+    font-size: 13px;
+  }
+
+  .rec.rec-arrow {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (width <= 370px) {
+  .segmento__titulo {
+    font-size: 10px;
+  }
+
+  .card__segmento {
+    margin: 0.3rem;
+  }
+
+  .rec.rec-arrow {
+    transform: scale(0.7);
+  }
+}

@@ -1,0 +1,23 @@
+.space-vertical {
+  padding: 2rem 0;
+}
+
+.icon-delete-imagem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 5px;
+  background-color: var(--color-dourado);
+  padding: 0.25rem 0.75rem;
+  font-size: 1.15rem;
+  color: var(--color-roxo);
+}
+
+@media only screen and (width >= 768px) {
+}
+
+@media only screen and (width <= 768px) {
+  .dados-gerais-noivas {
+    margin-top: -12rem !important;
+  }
+}

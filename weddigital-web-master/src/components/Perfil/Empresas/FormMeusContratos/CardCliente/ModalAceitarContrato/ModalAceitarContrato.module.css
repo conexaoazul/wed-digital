@@ -1,0 +1,25 @@
+.box {
+  color: var(--color-roxo);
+}
+
+.modal .ok {
+  background: var(--color-roxo);
+  color: var(--color-branco);
+  transition: all 500ms;
+}
+
+.modal .ok:hover {
+  background: var(--color-dourado);
+  color: var(--color-roxo);
+}
+
+.modal .cancel {
+  background: var(--color-dourado);
+  color: var(--color-roxo);
+  transition: all 500ms;
+}
+
+.modal .cancel:hover {
+  background: var(--color-roxo);
+  color: var(--color-branco);
+}

@@ -1,0 +1,121 @@
+.box {
+  background-color: var(--color-branco);
+  border-radius: 3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  color: var(--color-roxo);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.goldenText {
+  color: var(--color-roxo);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.topBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.listBox {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--color-branco);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.progressBarLimit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: var(--color-roxo);
+}
+
+.mensagemConvite {
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-roxo);
+  width: 40%;
+  margin: auto;
+}
+
+.addSupplierButton {
+  margin-top: 2rem;
+  color: var(--color-branco);
+  background-color: var(--color-roxo);
+  font-size: 20px;
+  font-weight: bold;
+  align-self: center;
+  border: 1px var(--color-roxo) solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 500ms;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.addSupplierButton:hover {
+  background: var(--color-dourado);
+  color: var(--color-roxo);
+}
+
+.budgetValueBox {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.budgetEditIcon {
+  color: var(--color-roxo);
+  font-size: 10px;
+  background: none;
+  border: none;
+}
+
+@media (width <= 600px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-cinza);
+    margin-bottom: 1rem;
+  }
+
+  .goldenText {
+    font-size: 20px;
+  }
+
+  .progressBarLimit {
+    font-size: 12px;
+  }
+
+  .addSupplierButton {
+    display: none;
+  }
+
+  .mensagemConvite {
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-roxo);
+    width: 90%;
+    margin: auto;
+  }
+}

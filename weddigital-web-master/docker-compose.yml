@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  weddigital.com.br:
+    container_name: weddigital.com.br
+    image: node:16.13.2
+    build:
+      context: web
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000

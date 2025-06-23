@@ -1,0 +1,77 @@
+.background-cursos-empresas .dashboard .cursos {
+  margin-top: 2rem !important;
+}
+
+.background-cursos-empresas .pt-5 {
+  padding-top: 3.5rem !important;
+}
+
+div.item-curso-empresa {
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem -1rem hsl(0deg 0% 0% / 32%);
+}
+
+div.item-curso-empresa div.image {
+  padding-top: 60%;
+  position: relative;
+}
+
+div.item-curso-empresa div.image span.nivel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.56rem 1rem;
+  background: var(--color-primary);
+  border-radius: 0 0 0.85rem;
+  font-weight: 600;
+}
+
+div.item-curso-empresa div.image span.blocked {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.56rem 1rem;
+  background: var(--color-primary);
+  border-radius: 0 0 0 0.85rem;
+  font-weight: 600;
+}
+
+div.item-curso-empresa div.content {
+  padding: 1.71rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+div.item-curso-empresa div.content a.btn {
+  /* margin-top: auto; */
+}
+
+div.item-curso-empresa div.content h4 {
+  font-size: 1.28rem;
+  font-weight: 600;
+}
+
+@media screen and (width <= 700px) {
+  .background-cursos-empresas {
+    margin-top: 0 !important;
+  }
+
+  .background-cursos-empresas .dashboard .cursos {
+    margin-top: 2rem !important;
+  }
+
+  .background-cursos-empresas .pt-5 {
+    padding-top: 0 !important;
+  }
+
+  main.dashboard section.cursos-empresas {
+    margin-top: 1rem !important;
+  }
+}

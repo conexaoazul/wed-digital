@@ -1,0 +1,338 @@
+section.avaliacao {
+  min-height: calc(100vh + 1rem);
+}
+
+section.avaliacao div.background {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 8vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.avaliacao div.background h2 {
+  font-size: 2.42rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+section.avaliacao div.background p {
+  font-size: 1.28rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+section.avaliacao div.background a {
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.56rem;
+  font-size: 1.28rem;
+  color: #fff;
+}
+
+section.avaliacao div.background a i {
+  margin-top: 0.07rem;
+}
+
+section.avaliacao div.forms {
+  padding: 4rem 8vw;
+  padding: 4.42rem 5rem 3.56rem;
+  background: #fff;
+  border-radius: 2rem;
+}
+
+section.avaliacao div.header_ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding: 3rem 2rem;
+}
+
+section.avaliacao div.header_ div.logo {
+  display: flex;
+  align-items: center;
+}
+
+section.avaliacao div.header_ div.logo img {
+  height: 3rem;
+  display: block;
+  margin-right: 0.56rem;
+  margin-top: -0.56rem;
+  margin-left: -0.56rem;
+}
+
+section.avaliacao div.header_ div.logo span {
+  font-weight: 600;
+  font-size: 1.14rem;
+  color: #fff;
+}
+
+section.avaliacao div.header_ a.link {
+  background: transparent;
+  border: 0;
+  color: var(--color-secondary);
+  color: #fff;
+}
+
+section.avaliacao div.forms div.title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+section.avaliacao div.forms div.progress_ {
+  margin: 2rem 0 3rem;
+}
+
+section.avaliacao div.forms div.progress_ div.bar {
+  width: 20rem;
+  height: 0.56rem;
+  border-radius: 1rem;
+  background: hsl(274deg 100% 95% / 100%);
+}
+
+section.avaliacao div.forms div.progress_ div.bar span {
+  background: var(--color-secondary);
+  display: flex;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+section.avaliacao div.forms hr {
+  opacity: 0.1;
+}
+
+section.avaliacao div.forms div.options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1.14rem;
+  padding: 2rem 2.28rem 1.28rem;
+  border-radius: 1rem;
+  background: hsl(274deg 100% 95% / 100%);
+}
+
+section.avaliacao div.forms div.options button {
+  background: transparent;
+  border: 0;
+  color: var(--color-dark);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.14rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s;
+}
+
+section.avaliacao div.forms div.options button > * {
+  transition: 0.2s;
+}
+
+section.avaliacao div.forms div.options button img {
+  height: 6rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+section.avaliacao div.forms div.options button:hover img {
+  transform: scale(1.1) translateY(-1rem);
+}
+
+section.avaliacao div.forms div.contents div.block {
+  padding-top: 2rem;
+}
+
+section.avaliacao div.forms div.contents div.block div.title h4 {
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+section.avaliacao div.forms div.contents div.block div.title h4 span {
+  color: var(--color-gray);
+  font-size: 80%;
+  font-weight: 500;
+}
+
+section.avaliacao div.forms div.options:has(> button.active) button img {
+  transform: scale(0.8) translateY(1rem);
+}
+
+section.avaliacao div.forms div.options:has(> button.active) button:hover img {
+  transform: scale(1) translateY(0);
+}
+
+section.avaliacao div.forms div.options button.active img {
+  transform: scale(1.2) translateY(0) !important;
+  filter: drop-shadow(0 0 1rem #8c19e444);
+}
+
+section.avaliacao div.forms div.options button.active span {
+  color: #8b20dd;
+  font-weight: 700;
+}
+
+section.avaliacao div.forms div.options:has(> button.btn) {
+  padding: 1.71rem 1.85rem;
+  padding: 0;
+  background: transparent;
+}
+
+section.avaliacao div.forms div.options button.btn {
+  border: 1px solid var(--color-secondary);
+  margin-right: 1rem;
+  box-shadow: 0 !important;
+}
+
+section.avaliacao div.forms div.options button.btn:first-child {
+  border-color: #dd2040;
+  color: #dd2040;
+}
+
+section.avaliacao div.forms div.options button.btn:last-child {
+  border-color: #1bad5d;
+  color: #1bad5d;
+}
+
+section.avaliacao div.forms div.options button.active.btn:first-child {
+  border-color: #dd2040;
+  background: #dd2040;
+}
+
+section.avaliacao div.forms div.options button.active.btn:last-child {
+  border-color: #1bad5d;
+  background: #1bad5d;
+}
+
+section.avaliacao div.forms div.options button.btn.active span {
+  color: #fff;
+}
+
+/* fornecedor */
+
+section.avaliacao div.forms div.fornecedor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+section.avaliacao div.forms div.fornecedor div.image {
+  padding-top: 14%;
+  width: 9rem;
+  border-radius: 0.56rem;
+  margin-right: 1.28rem;
+}
+
+section.avaliacao div.forms div.fornecedor h4 {
+  font-weight: 600;
+  font-size: 1.28rem;
+  color: var(--color-dark);
+}
+
+section.avaliacao div.forms div.fornecedor div.address {
+  color: var(--color-gray);
+}
+
+@media (width <= 1700px) {
+  section.avaliacao div.forms {
+    padding: 3rem;
+  }
+}
+
+@media (width <= 1500px) {
+  section.avaliacao div.forms div.options button img {
+    height: 4.56rem;
+  }
+}
+
+@media (width <= 991px) {
+  section.avaliacao div.container-fluid {
+    padding: 0 2rem;
+  }
+
+  section.avaliacao div.forms {
+    width: calc(100% + 4rem);
+    padding: 2rem;
+    margin: 0 -2rem;
+    border-radius: 0;
+  }
+
+  section.avaliacao div.forms div.options button img {
+    height: 3rem;
+  }
+
+  section.avaliacao div.forms div.options {
+    padding: 1rem 0;
+    background: transparent;
+  }
+
+  section.avaliacao div.header_ {
+    margin-bottom: 0;
+  }
+
+  section.avaliacao div.background {
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+
+  section.avaliacao div.header_ {
+    padding: 3rem 0;
+  }
+
+  section.avaliacao div.forms div.title h2 {
+    font-size: 1.56rem;
+  }
+
+  section.avaliacao div.forms div.progress_ div.bar {
+    width: 100%;
+  }
+
+  section.avaliacao div.forms div.options button {
+    font-size: 1rem;
+  }
+
+  section.avaliacao div.forms div.contents div.block div.title h4 {
+    font-size: 1.28rem;
+  }
+
+  section.avaliacao div.forms div.options {
+    margin-top: 0;
+  }
+
+  section.avaliacao div.background p {
+    font-size: 1.14rem;
+  }
+
+  section.avaliacao div.background h2 {
+    font-size: 2rem;
+  }
+
+  section.avaliacao div.background a {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  section.avaliacao div.forms div.progress_ {
+    margin-bottom: 2rem;
+  }
+
+  section.avaliacao div.forms div.contents div.block {
+    padding-top: 1rem;
+  }
+
+  section.avaliacao div.forms div.fornecedor div.image {
+    padding-top: 28%;
+    width: 10rem;
+    border-radius: 0.56rem;
+    margin-right: 1.28rem;
+  }
+
+  section.avaliacao div.forms:has(div.block.pt-0) {
+    margin-top: 24vh;
+  }
+}

@@ -1,0 +1,25 @@
+{
+	"ambiente-producao" : true,
+	"api": {
+		"linkApiGeralProducao": "https://api.weddigital.com.br/api",
+		"linkApiGeralLocalhost": "http://localhost:8080/api",
+		"linkApiImagem": "https://image.weddigital.com.br/image"
+	},
+
+	"linkPublicoProducao": "https://weddigital.com.br",
+	"linkPublicoLocalhost": "http://localhost:3000",
+
+	"webhookAtualizacaoCadastroNoiva": "https://hook.us1.make.com/qio1skupaduds1wo2km3xr88ujtge39o",
+
+
+	"comunidade": {
+		"linkProfissionais": "https://discord.gg/EPMeuUCZ",
+		"linkNoivos": "https://t.me/+qhJpDFg71j00YjQx"
+	},
+
+	"planos": {
+		"start": "https://pay.greenn.com.br/redirect/39384",
+		"ouro": "https://pay.greenn.com.br/redirect/24137",
+		"diamante": "https://pay.greenn.com.br/redirect/24138"
+	}
+}

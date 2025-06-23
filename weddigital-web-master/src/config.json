@@ -1,0 +1,18 @@
+{
+	"api": {
+		"linkApiGeral": "https://api.weddigital.com.br/api",
+		"linkApiImagem": "https://image.weddigital.com.br/image",
+		"linkPublico": "https://weddigital.com.br"
+	},
+
+	"comunidade": {
+		"linkProfissionais": "https://discord.gg/EPMeuUCZ",
+		"linkNoivos": "https://t.me/+qhJpDFg71j00YjQx"
+	},
+
+	"planos": {
+		"start": "https://pay.greenn.com.br/redirect/39384",
+		"ouro": "https://pay.greenn.com.br/redirect/24137",
+		"diamante": "https://pay.greenn.com.br/redirect/24138"
+	}
+}

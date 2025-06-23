@@ -1,0 +1,126 @@
+div.card-aceitar {
+  /* height: 100%; */
+
+  display: flex;
+  flex-direction: column;
+
+  /* border-radius: 0.56rem; */
+
+  /* margin: 1rem 0; */
+
+  /* background: hsla(0, 0%, 100%, 1);
+	border: 1px solid hsla(0, 0%, 0%, 0.2); */
+}
+
+div.card-aceitar div.image {
+  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+div.card-aceitar div.content_ {
+  height: 100%;
+
+  /* border: 1px solid hsla(0, 0%, 0%, 0.2);
+	border-width: 0 0 1px 0; */
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+div.card-aceitar div.content_ h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #828282;
+}
+
+div.card-aceitar div.content_ div.rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+div.card-aceitar div.content_ div.rating span {
+  display: flex;
+  margin-left: 0.28rem;
+  color: #828282;
+}
+
+div.card-aceitar div.content_ div.rating div.stars {
+  display: flex;
+  align-items: center;
+}
+
+div.card-aceitar div.content_ div.rating div.stars i {
+  color: var(--color-primary);
+  margin-right: 0.14rem;
+}
+
+div.card-aceitar div.content_ h6 {
+  font-size: 1.14rem;
+  font-weight: 600;
+}
+
+div.card-aceitar div.content_ div.buttons {
+  display: flex;
+  justify-content: space-around;
+
+  /* padding: 1rem 1rem 0.56rem; */
+}
+
+div.card-aceitar div.content_ div.buttons button {
+  border: 0;
+  background-color: transparent;
+  color: var(--color-dark);
+  font-weight: 500;
+  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s;
+}
+
+div.card-aceitar div.content_ div.buttons button:hover {
+  opacity: 0.8;
+}
+
+div.card-aceitar div.content_ div.buttons button span.icon {
+  width: 5rem;
+  min-width: 5rem;
+  height: 5rem;
+  min-height: 5rem;
+  border-radius: 5rem;
+  padding: 0 0.71rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* margin-bottom: 0.56rem; */
+
+  font-size: 3rem;
+
+  /* border: 2px solid hsla(0, 0%, 0%, 0.2); */
+
+  /* color: hsla(0, 0%, 0%, 0.2); */
+}
+
+div.card-aceitar div.content_ div.buttons button span.icon img {
+  max-width: 100%;
+}
+
+div.card-aceitar div.content_ div.buttons button.close_ span.icon {
+  color: #dc143c;
+  border-color: #dc143c;
+}
+
+div.card-aceitar div.content_ div.buttons button.check_ span.icon {
+  color: #14dc43;
+  border-color: #14dc43;
+}
+
+div.card-aceitar div.content_ a {
+  color: var(--color-secondary);
+}

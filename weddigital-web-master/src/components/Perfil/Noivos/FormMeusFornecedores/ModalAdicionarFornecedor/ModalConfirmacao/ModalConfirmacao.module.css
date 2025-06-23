@@ -1,0 +1,41 @@
+.box {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-roxo);
+  transition: all 500ms;
+}
+
+.check {
+  color: #25d366;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+@media (width <= 600px) {
+  .mobileOnly {
+    display: inherit;
+  }
+
+  .check {
+    font-size: 20px;
+  }
+}
+
+@media (width <= 400px) {
+  .text {
+    font-size: 10px;
+  }
+}
