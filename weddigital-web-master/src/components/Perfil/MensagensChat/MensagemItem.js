@@ -5,6 +5,9 @@ export default function MensagemItem(props) {
   return (
     <li className={props.myselfSend ? "right_" : "left_"}>
       <span className="message">{props.conteudoMensagem}</span>
+      <span>
+        <br />
+      </span>
       <span className="hour">{props.dataEnvioMensagem}</span>
     </li>
   );

@@ -32,7 +32,7 @@ export default function UploadImage(props) {
   let corBG = props.corBG;
 
   const renderReload = () => {
-    if (reload && !isImagemPerfil) {
+    if (reload && !isImagemPerfil && !isConfirmacaoCadastro) {
       return (
         <Button
           onClick={() => window.location.reload()}

@@ -112,9 +112,7 @@ div.nivel_ span:last-child {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 0.56rem;
-
   color: var(--color-secondary);
   font-weight: 600;
   font-size: 1.56rem;

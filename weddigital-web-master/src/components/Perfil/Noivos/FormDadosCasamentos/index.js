@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { message } from 'antd';
-
+import React, { useState } from "react";
 import "./FormDadosCasamento.css";
 
 import api from "../../../../api";
@@ -10,6 +8,7 @@ import CarregandoPlaceholder from "../../../Modal/CarregandoPlaceholder";
 import UploadImage from "../../../UploadImage";
 import CurrencyInput from "react-currency-input-field";
 import { func, number, string } from "prop-types";
+import { message} from "antd";
 
 export default function FormDadosGerais(props) {
   const [dadosCadastro, setDadosCadastro] = useState(props.dadosResumoPerfil);
@@ -30,34 +29,6 @@ export default function FormDadosGerais(props) {
   let idUsuario = props.idUsuario;
   let idNoivos = props.idNoivos;
   let tokenUsuario = props.tokenUsuario;
-
-  useEffect(() => {
-    console.log("Dados recebidos via props:", {
-      id: props.dadosResumoPerfil?.idUsuario,
-      nomeUsuario: props.dadosResumoPerfil?.nomeUsuario,
-      nomeConjuge: props.dadosResumoPerfil?.dadosCasamento?.nomeConjuge,
-      cidade: props.dadosResumoPerfil?.cidade,
-      estado: props.dadosResumoPerfil?.estado,
-      dadosCasamento: props.dadosResumoPerfil?.dadosCasamento
-    });
-
-    console.log("Estado local (dadosCadastro):", {
-      id: dadosCadastro?.idUsuario,
-      nomeUsuario: dadosCadastro?.nomeUsuario,
-      nomeConjuge: dadosCadastro?.dadosCasamento?.nomeConjuge,
-      cidade: dadosCadastro?.cidade,
-      estado: dadosCadastro?.estado,
-      dadosCasamento: dadosCadastro?.dadosCasamento
-    });
-
-
-    console.log("Comparação nomeConjuge:", {
-      "Props =>": props.dadosResumoPerfil?.dadosCasamento?.nomeConjuge,
-      "Estado local =>": dadosCadastro.dadosCasamento?.nomeConjuge,
-      "São iguais?": props.dadosResumoPerfil?.dadosCasamento?.nomeConjuge === 
-                    dadosCadastro.dadosCasamento?.nomeConjuge
-    });
-  }, [props.dadosResumoPerfil, dadosCadastro]);
 
   function onChange(ev) {
     const { value, name } = ev.target;
@@ -96,29 +67,40 @@ export default function FormDadosGerais(props) {
     ev.preventDefault();
     setIsCarregandoDados(true);
     setIsErroCadastro(false);
-    
+
+    const formatInstagram = (handle = '') => {
+      const trimmed = handle.trim();
+      if (!trimmed) return '';                
+      return trimmed.startsWith('@') ? trimmed : `@${trimmed}`;
+    };
+
+    const formatFacebook = (slug = '') => {
+      const trimmed = slug.trim();
+      if (!trimmed) return '';                
+      return trimmed.startsWith('/') ? trimmed : `/${trimmed}`;
+    };
+
+    const { dadosCasamento, instagram, facebook } = dadosCadastro;
     const whatsappOriginal = props.dadosResumoPerfil.numeroContato;
-    
-    let dadosParaEnviar = {
+
+    const dadosParaEnviar = {
       ...dadosCadastro,
-      nomeConjuge: dadosCadastro.dadosCasamento.nomeConjuge,
+      instagram: formatInstagram(instagram),
+      facebook: formatFacebook(facebook),
+      nomeConjuge: dadosCasamento.nomeConjuge,
       dadosCasamento: {
-        ...dadosCadastro.dadosCasamento,
-        qtdConvidados: dadosCadastro.dadosCasamento.qtdConvidados,
-        luaMel: dadosCadastro.dadosCasamento.luaMel,
-        orcamentoCasamento: dadosCadastro.dadosCasamento.orcamentoCasamento
-      }
+        ...dadosCasamento,
+        qtdConvidados: dadosCasamento.qtdConvidados,
+        luaMel: dadosCasamento.luaMel,
+        orcamentoCasamento: dadosCasamento.orcamentoCasamento,
+      },
     };
 
-    const validateWhatsapp = (number) => {
-      const cleaned = number.replace(/\D/g, '');
-      return cleaned.length === 11;
-    };
-
+    const validateWhatsapp = (number) => number.replace(/\D/g, '').length === 11;
     const isWhatsappValido = validateWhatsapp(dadosCadastro.numeroContato);
-    
+
     if (!isWhatsappValido) {
-      dadosParaEnviar.numeroContato = whatsappOriginal;
+      dadosParaEnviar.numeroContato = whatsappOriginal; // mantém o antigo
       setNumeroInvalido(true);
     } else {
       setNumeroInvalido(false);
@@ -131,26 +113,26 @@ export default function FormDadosGerais(props) {
       )
       .then(() => {
         setIsCarregandoDados(false);
-        
         if (!isWhatsappValido) {
           message.warning({
             content: 'Dados atualizados, mas o WhatsApp não foi alterado. Formato inválido!',
             duration: 10,
-            style: { marginTop: '4rem' }
+            style: { marginTop: '4rem' },
           });
         } else {
           message.success({
             content: 'Dados atualizados com sucesso!',
             duration: 5,
-            style: { marginTop: '4rem' }
+            style: { marginTop: '4rem' },
           });
         }
-
+        console.log('Estado de Envio (dadosParaEnviar):', dadosParaEnviar);
+        document.location.reload();
       })
       .catch((error) => {
         setIsErroCadastro(true);
         setIsCarregandoDados(false);
-        console.error("Erro na atualização:", error);
+        console.error('Erro na atualização:', error);
         message.error('Erro ao atualizar dados!');
         window.scrollTo(0, 0);
       });
@@ -228,7 +210,7 @@ export default function FormDadosGerais(props) {
                             required
                           />
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-5">
                           <label htmlFor="nomeConjuge" className="mb-2">
                             Qual o nome do seu amor?
                           </label>

@@ -92,8 +92,6 @@
   border: solid #380065;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg) translate(-50%, -50%);
-  transform: rotate(45deg) translate(-50%, -50%);
-  transform: rotate(45deg) translate(-50%, -50%);
 }
 
 .checkbox-input:checked ~ .checkmark::after {

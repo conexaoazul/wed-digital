@@ -34,9 +34,6 @@
 
 .people-list {
   transition: 0.5s;
-  transition: 0.5s;
-  transition: 0.5s;
-  transition: 0.5s;
 }
 
 .people-list .chat-list li {
@@ -262,7 +259,7 @@
   }
 }
 
-@media only screen and (minwidth: 768px) and (device-width <= 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (minwidth: 768px) and (device-width <= 1024px) and (orientation: landscape) and (min-device-pixel-ratio: 1) {
   .chat-app .chat-list {
     height: 480px;
     overflow-x: auto;

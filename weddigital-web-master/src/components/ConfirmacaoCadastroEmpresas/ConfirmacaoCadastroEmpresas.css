@@ -72,7 +72,7 @@
   margin: 0.75rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 
 .inputDadosEmpresa {
@@ -85,5 +85,24 @@
   .cardPassoAtual,
   .passosConfirmacaoCadastro {
     padding: 0;
+  }
+}
+
+@media screen and (width >= 1366px) {
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+
+.passosConfirmacaoCadastro .inputsDadosEmpresaPasso4 .form-check {
+  text-align: left !important;
+}
+
+.cardPassoAtual .inputsDadosEmpresaPasso4-title {
+  display: flex;
+  align-items: center;
+
+  h5 {
+    font-size: 1.15rem;
   }
 }

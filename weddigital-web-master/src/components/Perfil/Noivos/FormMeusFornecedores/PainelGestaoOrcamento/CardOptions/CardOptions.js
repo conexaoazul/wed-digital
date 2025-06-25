@@ -21,13 +21,24 @@ export default function CardOptions({ setMostrarOpcoes, opcoes }) {
       document.removeEventListener("click", handleDocumentClick);
     };
   }, [setMostrarOpcoes]);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      document.addEventListener("click", handleClickOutside);
+    }, 0);
+
+    return () => {
+      clearTimeout(timeout);
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [setMostrarOpcoes]);
 
   return (
     <div ref={cardRef} className={styles.optionsContainer}>
       <ul className={styles.list}>
         {opcoes?.map(({ action, title, icon }, index) => (
           <li className={styles.item} key={index}>
-            <button
+            <span
+              role="button"
               className={styles.button}
               onClick={() => {
                 action();
@@ -35,7 +46,7 @@ export default function CardOptions({ setMostrarOpcoes, opcoes }) {
             >
               <div className={styles.buttonIcon}>{icon}</div>
               <div className={styles.buttonText}>{title}</div>
-            </button>
+            </span>
           </li>
         ))}
       </ul>

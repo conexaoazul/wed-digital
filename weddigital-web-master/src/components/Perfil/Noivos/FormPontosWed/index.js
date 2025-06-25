@@ -4,6 +4,7 @@ import LinkPreenchaSeuCupom from "../../../Link/LinkPreenchaSeuCupom";
 import LinkPreenchaSeuCupomBloqueado from "../../../Link/LinkPreenchaSeuCupomBloqueado";
 import LinkGanhePontos from "../../../Link/LinkGanhePontos";
 import LinkSaibaComoParticipar from "../../../Link/LinkSaibaComoParticipar";
+import { getUltimoDiaMes } from "../../../../utils/Utils";
 
 export default function FormPontosWed(props) {
   let dadosCasamento = props.dadosCasamento;
@@ -51,7 +52,7 @@ export default function FormPontosWed(props) {
                             <label htmlFor="sorteioproximo">
                               Próximo sorteio dia:
                             </label>
-                            <span id="sorteioproximo">28/02/25</span>
+                            <span id="sorteioproximo">{getUltimoDiaMes()}</span>
                           </div>
                           <a
                             href={`/buscar-profissional?estado=${localStorage.getItem(

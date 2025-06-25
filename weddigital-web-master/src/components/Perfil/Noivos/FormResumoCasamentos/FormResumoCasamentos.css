@@ -163,10 +163,26 @@ aside.float-message h6 {
   align-items: center;
   justify-content: center;
   align-self: center;
+
+  span {
+    text-decoration: underline;
+  }
 }
 
 .avatar-perfil-noiva {
   width: 70%;
   margin-right: auto !important;
   margin-left: auto !important;
+}
+
+.comunidade a:hover {
+  color: var(--color-roxo);
+}
+
+.comunidade a:visited {
+  color: var(--color-roxo);
+}
+
+.comunidade a:active {
+  color: var(--color-roxo);
 }

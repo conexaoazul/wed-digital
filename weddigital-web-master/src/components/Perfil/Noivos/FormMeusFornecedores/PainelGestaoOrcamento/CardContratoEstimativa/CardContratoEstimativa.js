@@ -20,10 +20,11 @@ export default function CardContratoEstimativa(props) {
   const [valorDoContrato, setValorDoContrato] = useState(
     props.contrato.valorContratado ?? null,
   );
+
   const [mostrarOpcoes, setMostrarOpcoes] = useState(false);
   const [contrato, setContrato] = useState(props.contrato);
   const [imagem, setImagem] = useState(props.imagem);
-
+  console.log(mostrarOpcoes);
   let setCategoriaSelecionada = props.setCategoriaSelecionada;
   let adicionarNovoFornecedor = props.adicionarNovoFornecedor;
   let totalValue = props.totalValue;
@@ -312,7 +313,8 @@ export default function CardContratoEstimativa(props) {
           </div>
           <button
             className={style.iconBox}
-            onClick={() => {
+            onClick={(e) => {
+              e.stopPropagation();
               setMostrarOpcoes(!mostrarOpcoes);
             }}
           >

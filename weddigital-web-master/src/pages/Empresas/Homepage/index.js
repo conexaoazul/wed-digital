@@ -66,8 +66,8 @@ export default function HomePage() {
 
   let urlUTM = window.location.href.split("?");
   let utmData = urlUTM[1] ? `?${urlUTM[1]}` : "";
-  let url = `/empresas/cadastro_${utmData}`
-  if (idConvite){
+  let url = `/empresas/cadastro${utmData}`;
+  if (idConvite) {
     url = url + `&convite=${idConvite}`;
   }
 
@@ -91,10 +91,7 @@ export default function HomePage() {
                 <p className={textClass} id="labelEmpresasHidden">
                   {text}
                 </p>
-                <a
-                  href={url}
-                  className="btn btn-primary mt-4 mb-lg-0 mb-5"
-                >
+                <a href={url} className="btn btn-primary mt-4 mb-lg-0 mb-5">
                   <span>Cadastre-se grátis</span>
                 </a>
               </div>
@@ -244,10 +241,7 @@ export default function HomePage() {
                 <div className="title mb-4">
                   <h2 className="mb-0">Tudo isso na sua mão</h2>
                 </div>
-                <a
-                  href={url}
-                  className="btn btn-primary"
-                >
+                <a href={url} className="btn btn-primary">
                   <span className={"btnCadastroGratis"}>
                     Cadastre-se grátis
                   </span>
@@ -392,10 +386,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="col-lg-12 text-center">
-                <a
-                  href={url}
-                  className="btn btn-primary"
-                >
+                <a href={url} className="btn btn-primary">
                   <span className={"btnCadastroGratis"}>
                     Cadastre-se grátis
                   </span>
